@@ -20,4 +20,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           allow_empty_commit: true
           enable_jekyll: true
+          publish_dir: ./
           # cname: github.peaceiris.com
