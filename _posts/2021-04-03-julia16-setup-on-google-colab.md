@@ -3,7 +3,7 @@ layout: post
 excerpt: "setup-on-google-colab"
 title: "[2021s]クラウド環境 Google colab 上に構築する方法（2021春夏学期）"
 last_modified_at: 2021-04-03T01:29:02-05:00
-permalink: /article/julia16-setup-on-google-colab
+permalink: /julia-installation-guide/julia16-setup-on-google-colab
 categories:
   - googlecolab
 tags:
