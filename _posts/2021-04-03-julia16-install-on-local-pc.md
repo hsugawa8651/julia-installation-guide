@@ -109,8 +109,8 @@ tags:
   
 
 * ターミナルから Juliaを起動したい場合は、アプリケーション内の Juliaのシンボリックリンクを、例えば `/usr/local/bin/` に作っておくとよい。
-  * ターミナルを起動して、`%`プロンプトに対して、以下の1行を打ち込む。パスワードを求められる
-  > sudo ln -s /Applications/Julia-1.6.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia-16 [ENTER]
+  * ターミナルを起動して、`%`プロンプトに対して、以下の1行を打ち込む(`[ENTER]` は「 `ENTER` キーを押すこと」を意味する)。パスワードを求められる
+  > `sudo ln -s /Applications/Julia-1.6.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia-16` [ENTER]
 
   * `/usr/local/bin/julia-16` で起動できるようになります
 * [パッケージのインストール：準備０](#パッケージのインストール準備０) に進む
@@ -131,10 +131,10 @@ tags:
 * プロンプト `julia>` は，命令を待ち受ける状態である（コマンド・モード）
 * `1+1` を打ち込んだ後 `ENTER`キー を押す。計算結果 `2` が表示される。
 * 次の文を打ち込む。全て半角文字である。大文字・小文字は区別される。以後 `[ENTER]` は「 `ENTER` キーを押すこと」を意味する。　（WEB上の下のテキストはcopy&pasteできません。キーボードから打ち込んでください。以下同様です） 
-  > ENV["CONDA_JL_VERSION"]=3 [ENTER]
+  > `ENV["CONDA_JL_VERSION"]=3` [ENTER]
 
 * 次の文を打ち込む。全て半角文字である。大文字・小文字は区別される。
-  > ENV["MPL_BACKEND"]="TkAgg" [ENTER]
+  > `ENV["MPL_BACKEND"]="TkAgg"` [ENTER]
 
 
 ## パッケージのインストール：Unitful
@@ -176,7 +176,7 @@ tags:
 
 * `]` キーを押して、パッケージモードに入る。プロンプトが `pkg>` に変わる
 * 次の文を打ち込む。
-  > add PyPlot [ENTER]
+  > `add PyPlot` [ENTER]
 
   * 新しく `PyPlot` パッケージを導入する場合には10分以上かかる場合がある
 * `pkg>` プロンプトが出るまで待つ。
