@@ -110,7 +110,7 @@ tags:
 
 * ターミナルから Juliaを起動したい場合は、アプリケーション内の Juliaのシンボリックリンクを、例えば `/usr/local/bin/` に作っておくとよい。
   * ターミナルを起動して、`%`プロンプトに対して、以下の1行を打ち込む(`[ENTER]` は「 `ENTER` キーを押すこと」を意味する)。パスワードを求められる
-  > `sudo ln -s /Applications/Julia-1.6.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia-16` [ENTER]
+  > `sudo ln -s /Applications/Julia-1.6.app/Contents/Resources/julia/bin/julia  /usr/local/bin/julia-16` [ENTER]
 
   * `/usr/local/bin/julia-16` で起動できるようになります
 * [パッケージのインストール：準備０](#パッケージのインストール準備０) に進む
@@ -143,7 +143,7 @@ tags:
 
 * `]` キーを押すと，プロンプトが `pkg>` に変わる（パッケージ・モードに入る）
 * 次の文を打ち込む。
-  > add Unitful [ENTER]
+  > `add Unitful` [ENTER]
 
 * 新しくパッケージを入れる場合には、たくさんのメッセージが出る。赤字のテキストはエラーメッセージである。
   * 比較的親切なメッセージが表示される
@@ -158,14 +158,14 @@ tags:
   * 以後 `[CTRL]+c` は「コントロールキーを押しながら `c` を押すこと」を意味する
 * `julia>` プロンプトが出ているはず（現在コマンド・モードである）
 * 次の文を打ち込む。エラーメッセージが出ないことを確認する。
-  > using Unitful [ENTER]
+  > `using Unitful` [ENTER]
   * 比較的親切なメッセージが表示される
     * 以下のメッセージは、上の `add Unitful` が失敗したことを意味する。
       > Run `import Pkg; Pkg.add("Unitful")` to install the Unitful package.
     * 上の指示に従い `import Pkg; Pkg.add("Unitful")` と打ち込んでみる
 
 * さらに，次のように打ち込む
-  > 1u”m” [ENTER]
+  > `1u”m”` [ENTER]
 
 * 計算結果 `1 m` または `1 u"m"` が返ればOK
 
@@ -182,7 +182,7 @@ tags:
 * `pkg>` プロンプトが出るまで待つ。
 * `[CTRL]+c` を押して、パッケージ・モードを抜ける。プロンプトは `julia>` に戻る
 * 次の文を打ち込む。エラーメッセージが出ないことを確認する。
-  > using PyPlot [ENTER]
+  > `using PyPlot` [ENTER]
 
   * 新しく `PyPlot` パッケージを起動する場合には10分以上かかる場合がある
 * `julia>` プロンプトが出るまで待つ。
@@ -192,7 +192,7 @@ tags:
       > Pkg.build(“PyCall”) [ENTER]
 
 * `julia>` プロンプトに対して、次のように打つ
-  > plot([1,3,2]) [ENTER]
+  > `plot([1,3,2])` [ENTER]
 
 
 * グラフが表示されたらOK
@@ -244,7 +244,7 @@ tags:
 ![jupyter-session2](https://i.gyazo.com/671e2a735b697e28bfd98f18c4df930a.png)
 
 * セル内に、次のように打つ
-  > using PyPlot [SHIFT]+[ENTER]
+  > `using PyPlot` [SHIFT]+[ENTER]
   * エラーメッセージ（英語）が出たら、指示に従う
     * 例えば `Please run Pkg.build("PyCall")` というメッセージが出たら
       > import Pkg; Pkg.build(“PyCall”) [SHIFT]+[ENTER]
@@ -267,9 +267,9 @@ tags:
 * プログラミング開始時に Jupyter notebook を起動する
   * Julia を起動
   * `julia>` プロンプトに対して、以下のように順に打ち込む
-    > using IJulia [ENTER]
+    > `using IJulia` [ENTER]
 
-    > notebook() [ENTER]
+    > `notebook()` [ENTER]
 
   ![start-notebook](https://i.gyazo.com/45b52e651c4dc20c811b0a6955e19442.png)
 
