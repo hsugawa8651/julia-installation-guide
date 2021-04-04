@@ -207,11 +207,11 @@ tags:
   * 途中で、以下のメッセージが出たら、`ENTER` キーを押して進める
     > install Jupyter via Conda , y/n? [y]:
 * `[CTRL]+c` を押してコマンドモードへ.プロンプトは `julia>`
-* `using IJulia [ENTER]` と打つ
+* `using IJulia` [ENTER] と打つ
   * 新しく `IJulia` パッケージを起動する場合には10分以上かかる場合がある
   * 途中で、以下のメッセージが出たら、`ENTER` キーを押して進める
     > install Jupyter via Conda , y/n? [y]:
-* プロンプト `julia>` が出たら `notebook() [ENTER]` と打つ
+* プロンプト `julia>` が出たら `notebook()` [ENTER] と打つ
 
   ![start-jupyter](https://i.gyazo.com/41e553fc0309d00fd90bad417127518f.png)
 
@@ -247,10 +247,10 @@ tags:
   > `using PyPlot` [SHIFT]+[ENTER]
   * エラーメッセージ（英語）が出たら、指示に従う
     * 例えば `Please run Pkg.build("PyCall")` というメッセージが出たら
-      > import Pkg; Pkg.build(“PyCall”) [SHIFT]+[ENTER]
+      > `import Pkg; Pkg.build(“PyCall”)` [SHIFT]+[ENTER]
 
 * セル内で、次のように打つ
-  > plot([1,3,2]) [SHIFT]+[ENTER]
+  > `plot([1,3,2])` [SHIFT]+[ENTER]
 
 * ブラウザ内にグラフが描かれれば ok
 
