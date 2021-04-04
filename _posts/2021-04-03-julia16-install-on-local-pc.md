@@ -93,7 +93,7 @@ tags:
     ![mac-julia](https://i.gyazo.com/9959f4f6ab43470fa2a77b2a3e5d6202.png) 
 
   * MacOS が Julia の起動を阻止する場合がある
-    * 「開く」を選べば起動しますが、警告が毎回出るのは煩わしいかもしれない
+    * 「開く」を選べば起動するが、警告が毎回出るのは煩わしいかもしれない
 
 ![mac-julia-blocked](https://i.gyazo.com/7465ea17f3e83609a6644218d98c60dd.png)
 
