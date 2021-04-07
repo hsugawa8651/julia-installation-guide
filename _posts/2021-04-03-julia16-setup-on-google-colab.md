@@ -31,9 +31,20 @@ tags:
 ### 設定ファイルを入手する
 - 以下の URL を閲覧する。 Google へのログインが必要である
   > URLは、授業支援サイト kibaco を通じて連絡する
-- 貴君の google drive にコピーする
-  - `Connected apps` = `Connect Google colab` というボタンが現れたら、それを押す。
-    - メニューから 「ファイル > _ドライブにコピーを保存_」 と進む.
+- 連絡されたリンクをブラウザで閲覧すると、以下のような画面になる
+
+![accessNotebook](https://gyazo.com/73458ba1d6e32039679704a935753470.png)
+
+- 上部の `Google Colaboratoryで開く` を選択する 
+- Google Colab 上で、Notebookが開くはず
+
+![openNotebook](https://gyazo.com/e6ce2425f4dbf8a40ce25a2f05be90e7.png)
+
+- 始めて接続する場合は 「接続」ボタンが見えるはず。 「ホスト型ランタイム側に接続」を選ぶ。「接続済」になるまで待つ。
+
+![connectedRuntime](https://gyazo.com/90286dda692d57151bc3313dc17d274a.png)
+
+- メニューから 「ファイル > _ドライブにコピーを保存_」 と進む.
 
 ### Google colab を起動する
 - 以下をブラウザで閲覧 (Google Colaboratory のトップページ)
