@@ -16,6 +16,7 @@ tags:
 - Google アカウント
 - 以下の条件を満たす端末
   - Web ブラウザを利用できること
+  　- Google Chrome を推奨する 
   - 入力装置： コントロール (`CTRL`)キー、バックスラッシュ( `\` )キー、タブキーを確実に入力できること
   - 以上の条件から PC の利用を強く推奨する
     - フルキーボードを接続したタブレットやスマートフォンは利用可能だと邪推する
@@ -29,35 +30,32 @@ tags:
 ## 手順
 
 ### 設定ファイルを入手する
-- 以下の URL を閲覧する。 Google へのログインが必要である
+- Google のアカウントを登録する
+- Google Drive を有効にする
+  https://drive.google.com/
+- Google Colab を有効にする
+  https://colab.research.google.com/
+- Googleにログインしたまま、以下の URL を閲覧する。
   > URLは、授業支援サイト kibaco を通じて連絡する
-- 連絡されたリンクをブラウザで閲覧すると、以下のような画面になる
+- ブラウザで新しいタブを開き、上のリンクをブラウザのURL欄に貼り付ける。以下のような画面になる
 
 ![accessNotebook](https://gyazo.com/73458ba1d6e32039679704a935753470.png)
 
-- 上部の `Google Colaboratoryで開く` を選択する 
+- ページ上部の `Google Colaboratoryで開く` を選択する 
 - Google Colab 上で、Notebookが開くはず
 
 ![openNotebook](https://gyazo.com/e6ce2425f4dbf8a40ce25a2f05be90e7.png)
 
-- 始めて接続する場合は 「接続」ボタンが見えるはず。 「ホスト型ランタイム側に接続」を選ぶ。「接続済」になるまで待つ。
+- 「接続」ボタンが見える場合は、「接続」メニューから「ホスト型ランタイム側に接続」を選ぶ。
+- 「接続済」になれば、次に進める。
 
 ![connectedRuntime](https://gyazo.com/90286dda692d57151bc3313dc17d274a.png)
 
 - メニューから 「ファイル > _ドライブにコピーを保存_」 と進む.
 
-### Google colab を起動する
-- 以下をブラウザで閲覧 (Google Colaboratory のトップページ)
-  > https://colab.research.google.com/
-- Google アカウントの入力を促されたらログインする
+### Google colab での作業
 
-![selectGoogleColab](https://i.gyazo.com/6087d984b00cc7cfa74dbc8758a49127.png)
-
-- ファイルの選択を促されるはず
-  - ファイルの選択が表示されていないなら、メニューから 「ファイル」 を選ぶ.
-- `Google drive` タブを選ぶと、上でコピーしたファイル（拡張子 `.ipynb` ）が見つかるはず
-- そのファイルを選ぶ
-- 選んだファイルが表示されるはず
+- Google Colab notebook ファイルが表示されているはず
 
 ![startGoogleColab](https://i.gyazo.com/8466049d94fbaa733518fbc23f04f56d.png)
 
