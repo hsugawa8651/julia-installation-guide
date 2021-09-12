@@ -45,7 +45,7 @@ tags:
 ## Julia のダウンロード
 * Julia 言語のダウンロードのページを閲覧する。 https://julialang.org/downloads/
 * `Current stable release` の節に進む
-  * 2021年3月24日時点の最新版は version 1.6.0 である。 
+  * 2021年7月14日時点の最新版は version 1.6.2 である。 
 
 ![JuliaBinary](https://i.gyazo.com/e8338a4b58168a26e17c29bb2cca22e2.png)
 
@@ -307,4 +307,4 @@ tags:
   * 右上の `Logout` ボタンを押す
 
 ## 終わり
-- [2021春夏学期向け環境]({{ site.baseurl }}{% post_url 2021-04-03-env-2021s-julia16 %}) にもどる
+- [2021春夏学期向け環境]({{ site.baseurl }}{% post_url 2021-04-03-env-2021s-julia160 %}) にもどる
