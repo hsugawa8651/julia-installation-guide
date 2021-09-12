@@ -1,14 +1,16 @@
 ---
 layout: post
 excerpt: "setup-on-google-colab"
-title: "[2021s]クラウド環境 Google colab 上に構築する方法（2021春夏学期）"
+title: "[2021w][2021s]クラウド環境 Google colab 上に構築する方法（2021年）"
 last_modified_at: 2021-04-03T01:29:02-05:00
 permalink: /julia16-setup-on-google-colab
 categories:
-  - googlecolab
+- googlecolab
 tags:
-  - Julia
-  - google colab
+- Julia
+- google colab
+- 2021s
+- 2021w
 ---
 
 ## 必要なもの
@@ -116,4 +118,5 @@ tags:
 - 今回保存した .ipynb ファイルを複製して、プログラミングを開始する
 
 ## 終わり
+- [2021秋冬学期向け環境]({{ site.baseurl }}{% post_url 2021-09-01-julia162-env-2021w %}) にもどる
 - [2021春夏学期向け環境]({{ site.baseurl }}{% post_url 2021-04-03-julia160-env-2021s %}) にもどる

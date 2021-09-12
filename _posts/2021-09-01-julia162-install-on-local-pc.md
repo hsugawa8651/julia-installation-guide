@@ -5,10 +5,11 @@ title: "[2021w]手元 PC に実行環境を構築する方法（2021秋冬学期
 permalink: /julia162-install-on-local-PC
 last_modified_at: 2021-09-01T22:40:02-05:00
 categories:
-  - localpc
+  - home
 tags:
   - Julia
   - installation
+  - 2021w
 ---
 
 ## 必要なもの
@@ -47,7 +48,8 @@ tags:
 * `Current stable release` の節に進む
   * 2021年7月14日時点の最新版は version 1.6.2 である。 
 
-![JuliaBinary](https://i.gyazo.com/e8338a4b58168a26e17c29bb2cca22e2.png)
+![JuliaBinary](https://i.gyazo.com/18e99e609d3a446d7ea5c831a9206ed5.png)
+
 
 * 該当するバイナリファイルをダウンロードする
   * Windows 64bit なら `64bit installer`
@@ -307,4 +309,4 @@ tags:
   * 右上の `Logout` ボタンを押す
 
 ## 終わり
-- [2021春夏学期向け環境]({{ site.baseurl }}{% post_url 2021-04-03-julia160-env-2021s %}) にもどる
+- [2021秋冬学期向け環境]({{ site.baseurl }}{% post_url 2021-09-01-julia162-env-2021w %}) にもどる
