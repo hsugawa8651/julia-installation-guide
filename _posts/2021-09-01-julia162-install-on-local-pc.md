@@ -5,7 +5,7 @@ title: "[2021w]手元 PC に実行環境を構築する方法（2021秋冬学期
 permalink: /julia162-install-on-local-PC
 last_modified_at: 2021-09-01T22:40:02-05:00
 categories:
-  - home
+  - top
 tags:
   - Julia
   - installation
