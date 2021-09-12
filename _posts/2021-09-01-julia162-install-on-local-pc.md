@@ -12,7 +12,7 @@ tags:
   - 2021w
 ---
 
-## 必要なもの
+## 0. 必要なもの
 * ハードウエアの要件
   * 空きHDD容量5GB以上が望ましい
   * メインメモリ8GB以上が極めて望ましい
@@ -39,17 +39,16 @@ tags:
     * 特に、下記で説明する PyPlot パッケージは、インストール済の Python言語の処理系と競合する可能性がある
 
 ### セキュリティ対策ソフトとの競合
-* Julia が用いるパッケージの設置を妨害するセキュリティ対策ソフトがあります
-  * カスペルスキーが、以下の PyPlot パッケージの設置を妨害することが報告されました
+* セキュリティ対策ソフトの一部は、Julia が用いるパッケージの設置を妨害する機能があります
+  * Kaspersky Internet Securityは、以下の PyPlot パッケージの設置を妨害することが受講生から報告されました (2020年11月頃)
 * セキュリティ対策ソフトの機能を一時的に停止してみてください
  
-## Julia のダウンロード
+## 1. Julia のダウンロード
 * Julia 言語のダウンロードのページを閲覧する。 https://julialang.org/downloads/
 * `Current stable release` の節に進む
   * 2021年7月14日時点の最新版は version 1.6.2 である。 
 
 ![JuliaBinary](https://i.gyazo.com/18e99e609d3a446d7ea5c831a9206ed5.png)
-
 
 * 該当するバイナリファイルをダウンロードする
   * Windows 64bit なら `64bit installer`
@@ -59,13 +58,13 @@ tags:
 * バイナリファイルの大きさは 50MB 以上ある。数～数十分かかる場合がある
 
 * バイナリのインストール
-  * Windows の場合 [Julia のインストール Windows 向け](#julia-のインストール-windows-向け) に進む
-  * MacOSX の場合 [Julia のインストール MacOS 向け](#julia-のインストール-macos-向け) に進む
+  * Windows の場合 [2a. Julia のインストール Windows 向け](#2a) に進む
+  * MacOSX の場合 [2b. Julia のインストール MacOS 向け](#2b) に進む
   * 他のOSの場合は説明を省略
 
-* [パッケージのインストール：準備0](パッケージのインストール：準備０)に進む
+## 2a. Julia のインストール Windows 向け
+{: #2a }
 
-## Julia のインストール Windows 向け
 * ダウンロードした `exe` ファイルをダブルクリックする
 * Install ボタンを押して，作業を進める
   * インストール先ディレクトリは、変更しない（インストール場所をメモしておくとよい）
@@ -78,10 +77,12 @@ tags:
   * 起動できない場合は、OS やウイルス対策ソフトが、ダウンロードしたアプリケーションのインストールや起動を阻止していないか確認してください。
   * 信用できる作業を行っていると信じるなら、阻止を解除してください
     * Kaspersky Security が起動を阻止して、Juliaを削除(移動) する例がありました
-* [パッケージのインストール：準備０](#パッケージのインストール：準備０) に進む
+* [3a. Juliaを起動する](#3a) に進む
 
 
-## Julia のインストール MacOS 向け
+## 2b. Julia のインストール MacOS 向け
+{: #2b }
+
 * ダウンロードした `dmg` ファイルをダブルクリック
 *  解凍できたら，以下の画面になる
 
@@ -115,9 +116,10 @@ tags:
   > `sudo ln -s /Applications/Julia-1.6.app/Contents/Resources/julia/bin/julia  /usr/local/bin/julia-16` [ENTER]
 
   * `/usr/local/bin/julia-16` で起動できるようになります
-* [パッケージのインストール：準備０](#パッケージのインストール準備０) に進む
+* [3a. Juliaを起動する](#3a) に進む
 
-## パッケージのインストール：準備０
+## 3a. Juliaを起動する
+{: #3a }
 * ファイル・エクスプローラ(Windows) またはFinder(Mac)を起動する
 * 自分のホームディレクトリ（フォルダー）に移動する.
   * アカウントが `hs` なら，ホームディレクトリは，
@@ -126,20 +128,20 @@ tags:
     * MacOSX なら `/Users/hs`
 * ホームディレクトリに `.julia` という名前のディレクトリ（フォルダー） があれば，それを削除する
 
-## パッケージのインストール：準備１
+## 3b. パッケージ設置の準備
 ![CONDA_JL_VERSION](https://i.gyazo.com/c9aeab3a149e7f7542b69a46248f6ac8.png)
 
 * Julia を起動する
 * プロンプト `julia>` は，命令を待ち受ける状態である（コマンド・モード）
 * `1+1` を打ち込んだ後 `ENTER`キー を押す。計算結果 `2` が表示される。
-* 次の文を打ち込む。全て半角文字である。大文字・小文字は区別される。以後 `[ENTER]` は「 `ENTER` キーを押すこと」を意味する。　（WEB上の下のテキストはcopy&pasteできません。キーボードから打ち込んでください。以下同様です） 
+* 次の文を打ち込む。全て半角文字である。大文字・小文字は区別される。以後 `[ENTER]` は「 `ENTER` キーを押すこと」を意味する。（下のテキストはcopy&pasteできません。キーボードから打ち込んでください。以下同様です） 
   > `ENV["CONDA_JL_VERSION"]=3` [ENTER]
 
 * 次の文を打ち込む。全て半角文字である。大文字・小文字は区別される。
   > `ENV["MPL_BACKEND"]="TkAgg"` [ENTER]
 
 
-## パッケージのインストール：Unitful
+## 3c. Unitfulパッケージのインストール
 
 ![Uniftul](https://i.gyazo.com/1e00137c491bc8de2e864378ca1ffc8a.png)
 
@@ -172,7 +174,7 @@ tags:
 * 計算結果 `1 m` または `1 u"m"` が返ればOK
 
 
-### パッケージのインストール：PyPlot
+### 3d. PyPlotパッケージのインストール
 
 ![PyPlot](https://i.gyazo.com/3a0e24c9b21e205a5968098304cbbc46.png)
 
@@ -202,7 +204,7 @@ tags:
 ![PyPlot_plot](https://i.gyazo.com/1f736220e223d4cd865e8d5272780607.png)
 
 
-## パッケージのインストール：IJulia = Jupyter notebook (1)
+## 4a. IJuliaパッケージのインストール
 *  `]` キーを押してパッケージモードへ.プロンプトは `pkg>`
 * `add IJulia [ENTER]` と打ち込む.
   * 新しく `IJulia` パッケージを入れる場合には10分以上かかる場合がある
@@ -225,7 +227,7 @@ tags:
 
   ![start-jupyter](https://i.gyazo.com/5b5a315f345d3b61728b115b66b54c1b.png)
 
-## パッケージのインストール：IJulia = Jupyter notebook (2)
+## 4b. Jupyter notebookの起動
 * ブラウザに `Jupyter notebook` の起動画面が表示される
 * 画面右側の `New` ボタンを押す．
 * `Julia 1.6` を選んで起動する
@@ -234,7 +236,7 @@ tags:
     * kernel.json というファイルを適切に設定する
     * 分からない場合は相談してください
 
-## パッケージのインストール：IJulia = Jupyter notebook (3)
+## 4c. Jupyter notebook上でのプロット確認
 * 起動した `Notebook` 上で作業する
 
 ![jupyter-session1](https://i.gyazo.com/2a67362ddf8615f0f912500fae5ec149.png)
@@ -265,7 +267,7 @@ tags:
 
 * 以上で構築作業は終了
 
-## 授業開始時の操作
+## 5. 授業開始時の操作
 * プログラミング開始時に Jupyter notebook を起動する
   * Julia を起動
   * `julia>` プロンプトに対して、以下のように順に打ち込む
