@@ -307,4 +307,4 @@ tags:
   * 右上の `Logout` ボタンを押す
 
 ## 終わり
-- [2021春夏学期向け環境]({{ site.baseurl }}{% post_url 2021-04-03-env-2021s-julia16 %}) にもどる
+- [2021春夏学期向け環境]({{ site.baseurl }}{% post_url 2021-04-03-env-2021s-julia160 %}) にもどる
