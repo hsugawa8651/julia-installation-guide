@@ -34,6 +34,7 @@ github_username:  jekyll
 remote_theme: riggraz/no-style-please
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 theme_config:
   date_format: "%Y-%m-%d" # customize how date is formatted
