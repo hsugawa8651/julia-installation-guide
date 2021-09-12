@@ -5,10 +5,11 @@ title: "[2020w]手元 PC に実行環境を構築する方法（2020秋冬学期
 permalink: /julia15-install-on-local-PC
 last_modified_at: 2020-10-10T22:40:02-05:00
 categories:
-  - localpc
+- localpc
 tags:
-  - Julia
-  - installation
+- Julia
+- localpc
+- 2020w
 ---
 
 ## 必要なもの
