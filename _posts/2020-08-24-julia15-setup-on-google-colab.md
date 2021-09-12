@@ -5,7 +5,6 @@ title: "[2020w]クラウド環境 Google colab 上に構築する方法（2020�
 last_modified_at: 2020-09-28T01:29:02-05:00
 permalink: /julia15-setup-on-google-colab
 categories:
-  - home
 tags:
   - Julia
   - google colab
