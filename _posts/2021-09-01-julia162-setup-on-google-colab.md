@@ -1,15 +1,19 @@
 ---
 layout: post
 excerpt: "setup-on-google-colab"
-title: "[2021s]クラウド環境 Google colab 上に構築する方法（2021年春夏楽器）"
+title: "[2021w]クラウド環境 Google colab 上に構築する方法（2021年秋冬学期）"
 last_modified_at: 2021-04-03T01:29:02-05:00
 permalink: /julia16-setup-on-google-colab
 categories:
+  - top
 tags:
   - Julia
   - google colab
-  - 2021s
+  - 2021w
 ---
+
+* 
+{:toc}
 
 ## 必要なもの
 - インターネットへの常時接続
@@ -53,7 +57,7 @@ tags:
 
 - メニューから 「ファイル > _ドライブにコピーを保存_」 と進む.
 
-### Google colab での作業
+### Google colab で作業を始める
 
 - Google Colab notebook ファイルが表示されているはず
 
@@ -68,7 +72,7 @@ tags:
 
 ![hidden_code_cell](https://i.gyazo.com/27efde3ae629c6d12fc484c71754b573.png)
 
-### `%%shell` から始まるコードセルが見つかる
+#### `%%shell` から始まるコードセルが見つかる
    
 ![setupCodeCell](https://i.gyazo.com/eb7337953ff4c7939f65ae409fad6235.png)
 
@@ -116,4 +120,4 @@ tags:
 - 今回保存した .ipynb ファイルを複製して、プログラミングを開始する
 
 ## 終わり
-- [2021春夏学期向け環境]({{ site.baseurl }}{% post_url 2021-04-03-julia160-env-2021s %}) にもどる
+- [2021秋冬学期向け環境]({{ site.baseurl }}{% post_url 2021-09-02-julia162-env-2021w %}) にもどる

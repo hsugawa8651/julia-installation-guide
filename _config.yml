@@ -29,9 +29,6 @@ url: "https://hsugawa8651.github.io" # the base hostname & protocol for your sit
 twitter_username: jekyllrb
 github_username:  jekyll
 
-kramdown:
-  auto_ids: true
-
 # Build settings
 # theme: minimaa
 remote_theme: riggraz/no-style-please

@@ -12,6 +12,9 @@ tags:
   - 2021w
 ---
 
+* 
+{:toc}
+
 ## 0. 必要なもの
 * ハードウエアの要件
   * 空きHDD容量5GB以上が望ましい
@@ -58,12 +61,11 @@ tags:
 * バイナリファイルの大きさは 50MB 以上ある。数～数十分かかる場合がある
 
 * バイナリのインストール
-  * Windows の場合 [2a. Julia のインストール Windows 向け](#2a) に進む
-  * MacOSX の場合 [2b. Julia のインストール MacOS 向け](#2b) に進む
+  * Windows の場合 [2a. Julia のインストール Windows 向け](#2a-julia-のインストール-windows-向け) に進む
+  * MacOSX の場合 [2b. Julia のインストール MacOS 向け](#2b-julia-のインストール-macos-向け) に進む
   * 他のOSの場合は説明を省略
 
 ## 2a. Julia のインストール Windows 向け
-{: #2a }
 
 * ダウンロードした `exe` ファイルをダブルクリックする
 * Install ボタンを押して，作業を進める
@@ -77,11 +79,10 @@ tags:
   * 起動できない場合は、OS やウイルス対策ソフトが、ダウンロードしたアプリケーションのインストールや起動を阻止していないか確認してください。
   * 信用できる作業を行っていると信じるなら、阻止を解除してください
     * Kaspersky Security が起動を阻止して、Juliaを削除(移動) する例がありました
-* [3a. Juliaを起動する](#3a) に進む
+* [3a. Juliaを起動する](#3a-juliaを起動する) に進む
 
 
 ## 2b. Julia のインストール MacOS 向け
-{: #2b }
 
 * ダウンロードした `dmg` ファイルをダブルクリック
 *  解凍できたら，以下の画面になる
@@ -116,10 +117,10 @@ tags:
   > `sudo ln -s /Applications/Julia-1.6.app/Contents/Resources/julia/bin/julia  /usr/local/bin/julia-16` [ENTER]
 
   * `/usr/local/bin/julia-16` で起動できるようになります
-* [3a. Juliaを起動する](#3a) に進む
+* [3a. Juliaを起動する](#3a-juliaを起動する) に進む
 
 ## 3a. Juliaを起動する
-{: #3a }
+
 * ファイル・エクスプローラ(Windows) またはFinder(Mac)を起動する
 * 自分のホームディレクトリ（フォルダー）に移動する.
   * アカウントが `hs` なら，ホームディレクトリは，
@@ -311,4 +312,4 @@ tags:
   * 右上の `Logout` ボタンを押す
 
 ## 終わり
-- [2021秋冬学期向け環境]({{ site.baseurl }}{% post_url 2021-09-01-julia162-env-2021w %}) にもどる
+- [2021秋冬学期向け環境]({{ site.baseurl }}{% post_url 2021-09-02-julia162-env-2021w %}) にもどる
