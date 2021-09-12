@@ -2,7 +2,7 @@
 layout: post
 excerpt: "install-on-local-PC"
 title: "[2021s]手元 PC に実行環境を構築する方法（2021春夏学期）"
-permalink: /julia16-install-on-local-PC
+permalink: /julia160-install-on-local-PC
 last_modified_at: 2021-04-03T22:40:02-05:00
 categories:
   - localpc
