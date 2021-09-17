@@ -24,6 +24,9 @@ tags:
   * Windows 7以上, Windows10 64bitを推奨, … または
   * MacOSX 10.8以上, 10.13以上を推奨, … または
   * Linux など
+* CPUの要件
+  * Intelプロセッサまたは  
+  * ARMプロセッサ（Apple M1 Silicon Processor や Microsoft Surface Pro X) - 筆者には、これらの経験がなく確実な手順を記載できません
 * 用いるユーザアカウントの要件
   * 管理者アカウント
     * アプリケーションをインストール可能な権限を持つこと
@@ -61,11 +64,12 @@ tags:
 * バイナリファイルの大きさは 50MB 以上ある。数～数十分かかる場合がある
 
 * バイナリのインストール
-  * Windows の場合 [2a. Julia のインストール Windows 向け](#2a-julia-のインストール-windows-向け) に進む
-  * MacOSX の場合 [2b. Julia のインストール MacOS 向け](#2b-julia-のインストール-macos-向け) に進む
-  * 他のOSの場合は説明を省略
+  * Intel CPU機、Windows の場合 [2a. Julia のインストール Intel CPU機の Windows 向け](#2a-julia-のインストール-windows-向け) に進む
+  * Intel CPU機、MacOSX の場合 [2b. Julia のインストール Intel CPU機の MacOS 向け](#2b-julia-のインストール-macos-向け) に進む
+  * ARM CPU機の場合 [2c. Julia のインストール ARM機向け](#2c-Julia-のインストール-ARM機向け) に進む
+  * その他のOSの場合は説明を省略
 
-## 2a. Julia のインストール Windows 向け
+## 2a. Julia のインストール Intel CPU機の Windows 向け
 
 * ダウンロードした `exe` ファイルをダブルクリックする
 * Install ボタンを押して，作業を進める
@@ -82,7 +86,7 @@ tags:
 * [3a. Juliaを起動する](#3a-juliaを起動する) に進む
 
 
-## 2b. Julia のインストール MacOS 向け
+## 2b. Julia のインストール Intel CPU機の MacOS 向け
 
 * ダウンロードした `dmg` ファイルをダブルクリック
 *  解凍できたら，以下の画面になる
@@ -117,6 +121,15 @@ tags:
   > `sudo ln -s /Applications/Julia-1.6.app/Contents/Resources/julia/bin/julia  /usr/local/bin/julia-16` [ENTER]
 
   * `/usr/local/bin/julia-16` で起動できるようになります
+* [3a. Juliaを起動する](#3a-juliaを起動する) に進む
+
+## 2c. Julia のインストール ARM機向け
+(2021/9/17追記)
+* 筆者には、以下の経験がなく動作保証ができません
+* Apple Silicon機に Rosetta2 を入れると、Intel CPU向け実行ファイルを実行できます -> https://support.apple.com/ja-jp/HT211861
+* Apple Silicon機 (MacOSX 11.4 - Big Sur以上)向けに Julia v1.7.0-rcバイナリが公開されています → [Upcoming release: v1.7.0-rc1 (September 12, 2021)](https://julialang.org/downloads/#:~:text=Upcoming%20release%3A%20v1.7.0-rc1%20(September%2012%2C%202021)), macOS ARM (M-series Processor)
+* Windows 10 on ARM は、Intel向けバイナリをエミュレートします。Microsoft Storeから Julia のアプリをインストールするとよいでしょう。
+* PC経験が豊富なら、自分で Build 可能でしょう。Microsoft SQ1/SQ2 は ARM64 (AArch64)機です。手順の参考 → [Arm 32bit 環境で Julia を動かす](https://qiita.com/SatoshiTerasaki/items/df62e3d3a1037271e1d7)
 * [3a. Juliaを起動する](#3a-juliaを起動する) に進む
 
 ## 3a. Juliaを起動する
