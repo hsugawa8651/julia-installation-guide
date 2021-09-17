@@ -129,7 +129,8 @@ tags:
 * Apple Silicon機に Rosetta2 を入れると、Intel CPU向け実行ファイルを実行できます -> https://support.apple.com/ja-jp/HT211861
 * Apple Silicon機 (MacOSX 11.4 - Big Sur以上)向けに Julia v1.7.0-rcバイナリが公開されています → [Upcoming release: v1.7.0-rc1 (September 12, 2021)](https://julialang.org/downloads/#:~:text=Upcoming%20release%3A%20v1.7.0-rc1%20(September%2012%2C%202021)), macOS ARM (M-series Processor)
 * Windows 10 on ARM は、Intel向けバイナリをエミュレートします。Microsoft Storeから Julia のアプリをインストールするとよいでしょう。
-* PC経験が豊富なら、自分で Build 可能でしょう。Microsoft SQ1/SQ2 は ARM64 (AArch64)機です。手順の参考 → [Arm 32bit 環境で Julia を動かす](https://qiita.com/SatoshiTerasaki/items/df62e3d3a1037271e1d7)
+* M1 Mac用のParallels というソフト上で、Linuxを実行できます。その Linux上で Generic Linux on ARM用の Juliaバイナリを使えるでしょう。
+* PC経験が豊富なら、自分で Build 可能でしょう。Microsoft SQ1/SQ2 は ARM64 (AArch64)機のはずです。手順の参考 → [Arm 32bit 環境で Julia を動かす](https://qiita.com/SatoshiTerasaki/items/df62e3d3a1037271e1d7)
 * [3a. Juliaを起動する](#3a-juliaを起動する) に進む
 
 ## 3a. Juliaを起動する
