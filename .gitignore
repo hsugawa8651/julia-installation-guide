@@ -24,6 +24,11 @@ build/
 *.bridgesupport
 build-iPhoneOS/
 build-iPhoneSimulator/
+Gemfile.lock
+
+# Jekyl
+.jekyll-cache/
+_site/
 
 ## Specific to RubyMotion (use of CocoaPods):
 #
