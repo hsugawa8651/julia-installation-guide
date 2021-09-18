@@ -64,9 +64,9 @@ tags:
 * バイナリファイルの大きさは 50MB 以上ある。数～数十分かかる場合がある
 
 * バイナリのインストール
-  * Intel CPU機、Windows の場合 [2a. Julia のインストール Intel CPU機の Windows 向け](#2a-julia-のインストール-windows-向け) に進む
-  * Intel CPU機、MacOSX の場合 [2b. Julia のインストール Intel CPU機の MacOS 向け](#2b-julia-のインストール-macos-向け) に進む
-  * ARM CPU機の場合 [2c. Julia のインストール ARM機向け](#2c-Julia-のインストール-ARM機向け) に進む
+  * Intel CPU機、Windows の場合 [2a. Julia のインストール Intel CPU機の Windows 向け](#2a-julia-のインストール-intel-cpu機の-windows-向け) に進む
+  * Intel CPU機、MacOSX の場合 [2b. Julia のインストール Intel CPU機の MacOS 向け](#2b-julia-のインストール-intel-cpu機の-macos-向け) に進む
+  * ARM CPU機の場合 [2c. Julia のインストール ARM機向け](#2c-julia-のインストール-arm機向け) に進む
   * その他のOSの場合は説明を省略
 
 ## 2a. Julia のインストール Intel CPU機の Windows 向け
