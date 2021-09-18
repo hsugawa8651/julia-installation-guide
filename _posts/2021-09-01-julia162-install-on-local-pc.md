@@ -3,7 +3,7 @@ layout: post
 excerpt: "install-on-local-PC"
 title: "[2021w]手元 PC に実行環境を構築する方法（2021秋冬学期）"
 permalink: /julia162-install-on-local-PC
-last_modified_at: 2021-09-01T22:40:02-05:00
+last_modified_at: 2021-09-17T22:40:02-05:00
 categories:
   - top
 tags:
@@ -25,8 +25,8 @@ tags:
   * MacOSX 10.8以上, 10.13以上を推奨, … または
   * Linux など
 * CPUの要件
-  * Intelプロセッサまたは  
-  * ARMプロセッサ（Apple M1 Silicon Processor や Microsoft Surface Pro X) - 筆者には、これらの経験がなく確実な手順を記載できません
+  * Intelプロセッサ (AMD Ryzenプロセッサを含む)、または  
+  * ARMプロセッサ（Apple M1 Silicon Processor や Microsoft Surface Pro X) -- 筆者には、これらの経験がなく確実な手順を記載できません
 * 用いるユーザアカウントの要件
   * 管理者アカウント
     * アプリケーションをインストール可能な権限を持つこと
