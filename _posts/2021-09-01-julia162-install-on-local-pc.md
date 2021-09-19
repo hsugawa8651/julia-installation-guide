@@ -125,11 +125,11 @@ tags:
 (2021/9/17追記)
 * 筆者には、以下の経験がなく動作保証ができません
 * Native binaries
-  * Apple Silicon機 (MacOSX 11.4 - Big Sur以上)向けに Julia v1.7.0-rcバイナリが公開されています → [Upcoming release: v1.7.0-rc1 (September 12, 2021)](https://julialang.org/downloads/#upcoming_release), macOS ARM (M-series Processor)
+  * Apple M1 Silicon機 (MacOSX 11.4 - Big Sur以上)向けに (Julia 1.6の次期バージョン検討用の) Julia v1.7.0-rcバイナリが公開されています → [Upcoming release: v1.7.0-rc1 (September 12, 2021)](https://julialang.org/downloads/#upcoming_release), macOS ARM (M-series Processor)
 * Emulation of Intel CPU 
-  * Apple Silicon機に Rosetta (または Rosetta 2) が入ると、Intel CPU向けJuliaバイナリを実行できます。参考 -> https://juliaifrank.com/julialang-on-m1-chip/
+  * Apple M1 Silicon機に Rosetta (または Rosetta 2) が入ると、Intel mac向けJuliaバイナリを実行できます。参考 → https://juliaifrank.com/julialang-on-m1-chip/
 * Emulation under Linux 
-  * ARMベースの Windows 10機 (Microsoft Surface Pro X)上に、まずWSLを導入します (参考→ https://www.youtube.com/watch?v=Nm8EM8d8xto)。WSL (Windows Subsystem for Lunux)は、Windows 10 上で動作するLinux です。WSL上で、Generic Linux on ARM (AArch64) 向けの Juliaバイナリを導入できるでしょう。
+  * ARMベースの Windows 10機 (Microsoft Surface Pro X)上に、まずWSLを導入します (参考→ https://www.youtube.com/watch?v=Nm8EM8d8xto)。WSL (Windows Subsystem for Linux)は、Windows 10 上で動作するLinux です。WSL上で、Generic Linux on ARM (AArch64) 向けの Juliaバイナリを導入できるでしょう。
   * M1 Mac用のParallels という(有償)ソフト上で、Linuxを実行できます。その Linux上で Generic Linux on ARM (AArch64) 向けの Juliaバイナリを使えるでしょう。
 * Self-build
   * PC経験が豊富なら、自分で Build 可能でしょう。手順の参考 → [Arm 32bit 環境で Julia を動かす](https://qiita.com/SatoshiTerasaki/items/df62e3d3a1037271e1d7)
