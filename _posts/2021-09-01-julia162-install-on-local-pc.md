@@ -25,8 +25,8 @@ tags:
   * MacOSX 10.8以上, 10.13以上を推奨, … または
   * Linux など
 * CPUの要件
-  * Intelプロセッサ (AMD Ryzenプロセッサを含む)： これらプロセッサ向きにJuliaのバイナリが提供され、動作テストに合格することになっています
-  * ARMベースのプロセッサ（Apple M1 Silicon、Microsoft SQ1/SQ2 - Microsoft Surface Pro X)： これらプロセッサ向きのJuliaは実行ファイルを作成できますが、全ての動作テストに合格することは保証されていません。バイナリの提供は状況によります
+  * Intelプロセッサ (AMD Ryzenプロセッサを含む)： これらプロセッサ向きにはJuliaのバイナリは動作保証されることになっています。
+  * ARMベースのプロセッサ（Apple M1 Silicon、Microsoft SQ1/SQ2 - Microsoft Surface Pro X)： これらプロセッサ向けのJulia導入は、少し苦労する可能性があります。この文の筆者は未経験です
 * 用いるユーザアカウントの要件
   * 管理者アカウント
     * アプリケーションをインストール可能な権限を持つこと
@@ -124,11 +124,15 @@ tags:
 ## 2c. Julia のインストール ARM機向け
 (2021/9/17追記)
 * 筆者には、以下の経験がなく動作保証ができません
-* Apple Silicon機に Rosetta2 を入れると、Intel CPU向け実行ファイルを実行できます -> https://support.apple.com/ja-jp/HT211861
-* Apple Silicon機 (MacOSX 11.4 - Big Sur以上)向けに Julia v1.7.0-rcバイナリが公開されています → [Upcoming release: v1.7.0-rc1 (September 12, 2021)](https://julialang.org/downloads/#:~:text=Upcoming%20release%3A%20v1.7.0-rc1%20(September%2012%2C%202021)), macOS ARM (M-series Processor)
-* Windows 10 on ARM は、Intel向けバイナリをエミュレートします。Microsoft Storeから Julia のアプリをインストールするとよいでしょう。
-* M1 Mac用のParallels というソフト上で、Linuxを実行できます。その Linux上で Generic Linux on ARM用の Juliaバイナリを使えるでしょう。
-* PC経験が豊富なら、自分で Build 可能でしょう。Microsoft SQ1/SQ2 は ARM64 (AArch64)機のはずです。手順の参考 → [Arm 32bit 環境で Julia を動かす](https://qiita.com/SatoshiTerasaki/items/df62e3d3a1037271e1d7)
+* Native binaries
+  * Apple Silicon機 (MacOSX 11.4 - Big Sur以上)向けに Julia v1.7.0-rcバイナリが公開されています → [Upcoming release: v1.7.0-rc1 (September 12, 2021)](https://julialang.org/downloads/#upcoming_release), macOS ARM (M-series Processor)
+* Emulation of Intel CPU 
+  * Apple Silicon機に Rosetta (または Rosetta 2) が入ると、Intel CPU向けJuliaバイナリを実行できます。参考 -> https://juliaifrank.com/julialang-on-m1-chip/
+* Emulation under Linux 
+  * ARMベースの Windows 10機 (Microsoft Surface Pro X)上に、まずWSLを導入します (参考→ https://www.youtube.com/watch?v=Nm8EM8d8xto)。WSL (Windows Subsystem for Lunux)は、Windows 10 上で動作するLinux です。WSL上で、Generic Linux on ARM (AArch64) 向けの Juliaバイナリを導入できるでしょう。
+  * M1 Mac用のParallels という(有償)ソフト上で、Linuxを実行できます。その Linux上で Generic Linux on ARM (AArch64) 向けの Juliaバイナリを使えるでしょう。
+* Self-build
+  * PC経験が豊富なら、自分で Build 可能でしょう。手順の参考 → [Arm 32bit 環境で Julia を動かす](https://qiita.com/SatoshiTerasaki/items/df62e3d3a1037271e1d7)
 * [3a. Juliaを起動する](#3a-juliaを起動する) に進む
 
 ## 3a. Juliaを起動する
