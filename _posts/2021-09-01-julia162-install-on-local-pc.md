@@ -245,7 +245,7 @@ tags:
 ## 4b. Jupyter notebookの起動
 * ブラウザに `Jupyter notebook` の起動画面が表示される
 * 画面右側の `New` ボタンを押す．
-* `Julia 1.6` を選んで起動する
+* `Julia 1.6` を選んで起動する (`Julia 1.6.2` と表示される場合もあります)
   * kernelのリストに `Julia 1.6` が見つからない場合
     * Jupyter notebookを既にインストール済のPCで起こる可能性がある
     * kernel.json というファイルを適切に設定する
