@@ -1,7 +1,7 @@
 ---
 layout: post
 excerpt: "install-on-local-PC"
-title: "[2022s]手元 PC に実行環境を構築する方法（2021秋冬学期）"
+title: "[2022s]手元 PC に実行環境を構築する方法（2022春夏学期）"
 permalink: /julia172-install-on-local-PC
 last_modified_at: 2022-04-05T22:40:02-05:00
 categories:
