@@ -6,8 +6,6 @@ on:
   push:
     branches:
       - main
-  schedule:
-    - cron: '24 */24 * * *'  # Once a day
 
 jobs:
   deploy:
